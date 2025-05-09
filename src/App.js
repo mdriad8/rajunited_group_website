@@ -1,23 +1,31 @@
 import React from 'react';
-import Hero from './components/HeroSection'; 
-import './index.css';
-import TimeLine from './components/TimeLineSection';
-import MenuNavigation from './components/MenuSection';
-import Projects from './components/ProjectsSection';
-import Skills from './components/SkillSection';
-import Contact from './components/ContactSection';
-import Footer from './components/FooterSection';
+import { Routes, Route } from 'react-router-dom';
+
+// Layouts
+import MainLayout from './layouts/MainLayout';
+
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import ForAgencies from './pages/ForAgencies';
+import Process from './pages/Process';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+
 function App() {
   return (
-    <div>
-      <MenuNavigation />
-    <Hero />
-    <TimeLine />
-    <Projects/>
-    <Skills/>
-    <Contact/>
-    <Footer/>
-  </div>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="services" element={<Services />} />
+        <Route path="for-agencies" element={<ForAgencies />} />
+        <Route path="process" element={<Process />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 

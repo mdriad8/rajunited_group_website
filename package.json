@@ -1,5 +1,5 @@
 {
-  "name": "my_portfolio",
+  "name": "rajunited_group",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,10 +9,15 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "framer-motion": "^12.10.4",
+    "lucide-react": "^0.509.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-router-dom": "^7.6.0",
     "react-scripts": "5.0.1",
+    "react-youtube": "^10.1.0",
     "typescript": "^5.8.3",
     "web-vitals": "^2.1.4"
   },
